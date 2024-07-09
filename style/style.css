@@ -155,10 +155,10 @@ body {
 
 #conteudo__mostra__copiar {
     cursor: pointer;
-    background-color: blueviolet;
+    background-color: #ECB176;
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
-    color: var(--cor-secundaria);
+    color: #A67B5B;
     height: 67px;
     border-width: 1px;
     border-radius: 24px;
