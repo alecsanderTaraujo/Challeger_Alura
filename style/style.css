@@ -1,0 +1,222 @@
+:root {
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria: #543310;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    height: 100vh;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 4%;
+    height: 90%;
+    gap: 80px;
+}
+
+.conteudo__figuras {
+    height: 3%;
+    width: 3%;
+}
+
+.conteudo__figuras__logo {
+    width: 20px;
+}
+
+.conteudo__criptografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 7%;
+    padding-bottom: 2%;
+    width: 60%;
+    height: auto;
+}
+
+#conteudo__criptografia__caixa {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 70%;
+    color: var(--cor-secundaria);
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+}
+
+.conteudo__criptografia__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.conteudo__criptografia__info__texto {
+    display: flex;
+    font-size: 0.75rem;
+    gap: 0.5rem;
+    align-items: center;
+    color: #495057;
+}
+
+.conteudo__criptografia__info__imagem {
+    width: 1rem;
+}
+
+.conteudo__criptografia__info__button {
+    display: flex;
+    gap: 24px;
+}
+
+.conteudo__criptografia__info__button__crip {
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: white;
+    width: 100%;
+    height: 67px;
+    border: none;
+    border-radius: 24px;
+}
+
+.conteudo__criptografia__info__button__decrip {
+    cursor: pointer;
+    background-color: #828891;
+    color: var(--cor-secundaria);
+    width: 100%;
+    height: 67px;
+    border-width: 1px;
+    border-radius: 24px;
+    border-color: var(--cor-secundaria);
+}
+
+.conteudo__mostra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    box-shadow: 2px 2px 10px 0px rgba(0.84, 0.87, 0.9, 0.1);
+    background-color: #FFFFFF;
+    width: 25%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+#conteudo__mostra__imagem {
+    width: 80%;
+}
+
+#conteudo__mostra__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    gap: 1rem;
+}
+
+.conteudo__mostra__info__subtitulo {
+    color: #343A40;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.conteudo__mostra__info__texto {
+    display: flex;
+    justify-content: center;
+    color: #495057;
+    font-size: 1rem;
+}
+
+#conteudo__mostra__alt {
+    display: none;
+    height: 90%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#conteudo__mostra__resultado {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    height: 70%;
+    font-size: 1.5rem;
+    color: #495057;
+}
+
+#conteudo__mostra__copiar {
+    cursor: pointer;
+    background-color: blueviolet;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--cor-secundaria);
+    height: 67px;
+    border-width: 1px;
+    border-radius: 24px;
+    border-color: var(--cor-secundaria);
+}
+
+@media screen and (max-width: 1024px) {
+
+    .conteudo {
+        flex-direction: column;
+        padding-bottom: 5%;
+        gap: 20px;
+        height: auto;
+    }
+    #conteudo__mostra__imagem {
+        display: none;
+    }
+    .conteudo__criptografia {
+        margin: 0;
+        padding: 0%;
+        width: auto;
+    }
+    #conteudo__criptografia__caixa {
+        height: 300px;
+    }
+    .conteudo__mostra {
+        width: 96%;
+        height: 80px;
+        padding: 5% 2%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .conteudo__criptografia__info__button {
+        flex-direction: column;
+    }
+    .rodape {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        width: 100%;
+        margin-top: auto; 
+    }
+    
+    .rodape h2 {
+        margin: 0;
+        padding: 10px;
+        font-size: 1.5em;
+    }
+    
+    .rodape .icons a {
+        margin: 0 10px;
+        font-size: 30px;
+        color: white;
+       
+
+    
+    
+    }
+}

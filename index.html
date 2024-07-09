@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    
+    <title>Decodificador</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <main class="conteudo">
+        <figure class="conteudo__figuras">
+            <img class="conteudo__figuras__logo" src="./images/logo-alura.png" alt="Logo alura">
+        </figure>
+        <section class="conteudo__criptografia">
+            <textarea name="texto" id="conteudo__criptografia__caixa" onfocus="limparTexto(this)" onblur="reporTexto(this)">Digite sua mensagem!</textarea>
+            <div class="conteudo__criptografia__info">
+                <p class="conteudo__criptografia__info__texto"><img class="conteudo__criptografia__info__imagem" src="./images/exclamacao.png" alt="exclamacao logo">APENAS LETRAS MINÚSCULAS E SEM ACENTO</p>
+                <div class="conteudo__criptografia__info__button">
+                    <button class="conteudo__criptografia__info__button__crip" onclick="criptografar()">Criptografar</button>
+                    <button class="conteudo__criptografia__info__button__decrip" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="conteudo__mostra">
+            <img id="conteudo__mostra__imagem" src="./images/pessoa com lupa.png" alt="pessoa com lupa">
+            <div id="conteudo__mostra__info">
+                <h1 class="conteudo__mostra__info__subtitulo">Nenhuma mensagem encontrada</h1>
+                <p class="conteudo__mostra__info__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div id="conteudo__mostra__alt">
+                <textarea id="conteudo__mostra__resultado" disabled>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</textarea>
+                <button id="conteudo__mostra__copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        .rodape {
+            text-align: center;
+            padding: 20px;
+            background-color: #543310; 
+            color: white; 
+        }
+
+        .rodape h2 {
+            margin: 0;
+            padding: 10px;
+            font-size: 1.5em; 
+        }
+
+        .rodape .icons a {
+            margin: 0 10px;
+            font-size: 40px; 
+            color: white; 
+            transition: color 0.3s; 
+        }
+
+        .rodape .icons a:hover {
+            color: #543310; 
+        }
+
+        .rodape .icons {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .rodape h2 {
+                font-size: 1.2em; 
+            }
+
+            .rodape .icons a {
+                font-size: 30px; 
+                margin: 1%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<footer class="rodape">
+    <h2>Desenvolvido por Alecsander Teixeira Araujo</h2>
+    
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/alecsander-teixeira-araujo-5512031b1"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/alecsanderTaraujo"><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
