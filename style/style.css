@@ -85,8 +85,8 @@ body {
 
 .conteudo__criptografia__info__button__decrip {
     cursor: pointer;
-    background-color: #828891;
-    color: var(--cor-secundaria);
+    background-color: #ECB176;
+    color: #A67B5B;
     width: 100%;
     height: 67px;
     border-width: 1px;
